@@ -7,21 +7,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <header>
+    <h1>Branched & Bold</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-  <section>
-    <h1>Contact Us</h1>
+  <main>
+    <h2>Contact Us</h2>
     <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
+      <input type="hidden" name="form-name" value="contact" />
+      <label>
+        Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
     </form>
-  </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Branched & Bold Ltd. All rights reserved.</p>
+  </footer>
 </body>
 </html>
